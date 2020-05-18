@@ -1,0 +1,15 @@
+{
+  "name": "Darkify WhatsApp Web",
+  "version": "1.0",
+  "description": "Change WhatsApp web to dark theme by adding 'dark' class to body element",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": ["darkify.js"]
+    }
+  ]
+}
